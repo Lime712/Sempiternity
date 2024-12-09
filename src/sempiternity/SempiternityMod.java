@@ -13,7 +13,7 @@ public class SempiternityMod extends Mod{
 
     public SempiternityMod(){
         
-        });
+        }
     }
 
     @Override
