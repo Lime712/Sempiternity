@@ -49,7 +49,7 @@ public class SempiternityBlocks{
 
     tube, tubeRouter, tubeBridge, tubeUnloader,
 
-    vortexPump, pipe, pipeBridge
+    vortexPump, pipe, pipeBridge, cistern
 
     ;
 
@@ -138,6 +138,14 @@ public class SempiternityBlocks{
             underBullets = true;
 
             ((Conduit)pipe).rotBridgeReplacement = this;
+        }};
+
+        cistern = new LiquidRouter("cistern"){{
+            requirements(Category.liquid, with(SempiternityItems.amalgam, 40, SempiternityItems.erbia, 50));
+            size = 3;
+            solid = true;
+            liquidCapacity = 2700f;
+            liquidPadding = 2f;
         }};
 
         //power
