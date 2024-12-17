@@ -35,8 +35,10 @@ import mindustry.world.blocks.units.*;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
-import sempiternity.content.*;
+import sempiternity.content.SempiternityItems;
+import sempiternity.content.SempiternityLiquids;
 
+import static arc.Core.*;
 import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
 
