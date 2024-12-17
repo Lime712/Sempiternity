@@ -12,7 +12,7 @@ public class SempiternityItems{
             cost = 2f;
         }};
 
-        aluminum = new Item("aluminum", Color.valueOf("a89fc9")){{
+        aluminium = new Item("aluminium", Color.valueOf("a89fc9")){{
             hardness = 3;
             cost = 1;
             healthScaling = 0.75f;

@@ -53,6 +53,12 @@ public class SempiternityBlocks{
 
     public static void load(){
 
+        //environment
+
+        //boulder
+
+        //ore
+
         wallOreErbia = new OreBlock("ore-wall-erbia", SempiternityItems.erbia){{
             wallOre = true;
         }};
@@ -61,9 +67,13 @@ public class SempiternityBlocks{
             wallOre = true;
         }};
 
-        wallOreAluminium = new OreBlock("ore-wall-aluminium", SempiternityItems.aluminium){{
-            wallOre = true;
-        }};
+        //crafting
+
+        //defense
+
+        //walls
+
+        //distribution
 
         tube = new Duct("tube"){{
             requirements(Category.distribution, with(SempiternityItems.aluminium, 1));
@@ -98,5 +108,41 @@ public class SempiternityBlocks{
             underBullets = true;
             regionRotated1 = 1;
         }};
+
+        //liquid
+
+        pipe = new ArmoredConduit("pipe"){{
+            requirements(Category.liquid, with(SempiternityItems.erbia, 2));
+            botColor = Color.valueOf("282b34");
+            leaks = true;
+            liquidCapacity = 20f;
+            liquidPressure = 1.03f;
+            health = 250;
+            researchCostMultiplier = 3;
+            underBullets = true;
+        }};
+
+        pipeBridge = new DirectionLiquidBridge("pipe-bridge"){{
+            requirements(Category.liquid, with(SempiternityItems.aluminium, 8, SempiternityItems.erbia, 20));
+            range = 2;
+            hasPower = false;
+            researchCostMultiplier = 1;
+            underBullets = true;
+
+            ((Conduit)pipe).rotBridgeReplacement = this;
+        }};
+
+        //power
+
+        //production
+
+        //storage
+
+        //turrets
+
+        //units
+
+        //payloads
+
     }
 }
