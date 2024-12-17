@@ -68,7 +68,7 @@ public class SempiternityBlocks{
             health = 90;
             speed = 3f;
             researchCost = with(Items.aluminium, 5);
-        }}
+        }};
 
         tubeRouter = new DuctRouter("tube-router"){{
             requirements(Category.distribution, with(SempiternityItems.aluminium, 10));

@@ -29,7 +29,7 @@ public class SempiternityItems{
         }};
 
         nitride = new Item("nitride", Color.valueOf("dcd2f0")){{
-            cost = 1.3f
+            cost = 1.3f;
             healthScaling = 0.5f;
         }};
     }
