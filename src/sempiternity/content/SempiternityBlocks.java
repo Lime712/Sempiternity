@@ -47,7 +47,9 @@ public class SempiternityBlocks{
 
     wallOreErbia, wallOreAluminium,
 
-    tube, tubeRouter, tubeBridge, tubeUnloader
+    tube, tubeRouter, tubeBridge, tubeUnloader,
+
+    vortexPump, pipe, pipeBridge
 
     ;
 
@@ -111,6 +113,12 @@ public class SempiternityBlocks{
 
         //liquid
 
+        vortexPump = new Pump("vortex-pump"){{
+            requirements(Category.liquid, with(SempiternityItems.erbia, 40, SempiternityItems.aluminium, 30));
+            pumpAmount = 1f / 24f;
+            size = 2;
+        }};
+        
         pipe = new ArmoredConduit("pipe"){{
             requirements(Category.liquid, with(SempiternityItems.erbia, 2));
             botColor = Color.valueOf("282b34");
