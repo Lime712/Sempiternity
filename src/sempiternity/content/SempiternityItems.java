@@ -5,7 +5,7 @@ import arc.struct.*;
 import mindustry.type.*;
 
 public class SempiternityItems{
-    public static Item aerogel, aluminum, amalgam, erbia, nitride;
+    public static Item aerogel, aluminium, amalgam, erbia, nitride;
 
     public static void load(){
         aerogel = new Item("aerogel", Color.valueOf("edb347")){{

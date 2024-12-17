@@ -69,7 +69,7 @@ public class SempiternityBlocks{
             requirements(Category.distribution, with(SempiternityItems.aluminium, 1));
             health = 90;
             speed = 3f;
-            researchCost = with(Items.aluminium, 5);
+            researchCost = with(SempiternityItems.aluminium, 5);
         }};
 
         tubeRouter = new DuctRouter("tube-router"){{
@@ -90,8 +90,8 @@ public class SempiternityBlocks{
             range = 2;
         }};
 
-        ductUnloader = new DirectionalUnloader("duct-unloader"){{
-            requirements(Category.distribution, with());
+        tubeUnloader = new DirectionalUnloader("tube-unloader"){{
+            requirements(Category.distribution, with(SempiternityItems.amalgam, 20, SempiternityItems.erbia, 20, SempiternityItems.nitride, 20));
             health = 120;
             speed = 3f;
             solid = false;

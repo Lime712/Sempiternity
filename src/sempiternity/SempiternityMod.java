@@ -8,6 +8,7 @@ import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
+import sempiternity.content.*;
 
 public class SempiternityMod extends Mod{
 
@@ -17,7 +18,9 @@ public class SempiternityMod extends Mod{
 
     @Override
     public void loadContent(){
-        Log.info("Loading some example content.");
+        SempiternityItems.load();
+        SempiternityLiquids.load();
+        SempiternityBlocks.load();
     }
 
 }
